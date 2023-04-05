@@ -7,6 +7,6 @@ def safe_print_integer_err(value):
     try:
         print("{:d}".format(value))
         return (True)
-    except Exception:
-        logging.exception('Please check input value')
+    except Exception as err:
+        print(logging.exception)
         return (False)
