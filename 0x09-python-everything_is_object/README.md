@@ -42,13 +42,13 @@ Task 18 -
 
 Task 19 - 
 
-Task 20 - Because an empty tuple can be formed by an empty pair of parentheses.
+Task 20 - Yes, because an empty tuple can be formed by an empty pair of parentheses.
 
-Task 21 - Because a tuple is a collection of objects enclosed in a parentheses and separated by commas.
+Task 21 - Yes, because a tuple is a collection of objects enclosed in a parentheses and separated by commas.
 
-Task 22 - Because a comma must follow an expression when creating a tuple 'singleton'.
+Task 22 - No, because a comma must follow an expression when creating a tuple 'singleton'.
 
-Task 23 - 
+Task 23 - Yes, becuase of the same reason that applies to task 22.
 
 Task 24 - 
 
