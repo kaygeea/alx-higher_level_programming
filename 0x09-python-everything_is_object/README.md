@@ -36,7 +36,7 @@ Task 15 -
 
 Task 16 - 
 
-Task 17 - 
+Task 17 - .append() adds an item to the end of a list.
 
 Task 18 - 
 
