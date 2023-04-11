@@ -52,7 +52,7 @@ Task 23 - Yes, becuase of the same reason that applies to task 22.
 
 Task 24 - "True". Because the 'is' operator compares the identity of two objects and returns a Boolean depending on whether they're similar or not.
 
-Task 25 - 
+Task 25 - "True". Because of the same reason that applies to Task 24.
 
 Task 26 - 
 
