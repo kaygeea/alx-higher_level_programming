@@ -34,7 +34,7 @@ Task 14 -
 
 Task 15 - 
 
-Task 16 - 
+Task 16 - The "+=" operand revalues an assigned element by adding the value of an input to it.
 
 Task 17 - .append() adds an item to the end of a list.
 
