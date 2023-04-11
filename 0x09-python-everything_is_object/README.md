@@ -8,7 +8,7 @@ Task 1 -
 
 Task 2 - No. Except they are objects, which they can't be because objects names that starts with numbers are not valid in Python.
 
-Task 3 - 
+Task 3 - Still no, because of the same reason in Task 2
 
 Task 4 - 
 
