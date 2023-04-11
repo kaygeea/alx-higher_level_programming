@@ -4,7 +4,7 @@ ALX SE project to test understanding of objects in Python. Below are reasons for
 
 Task 0 - 
 
-Task 1 - 
+Task 1 - "For Cpython, id(x) is the memory address where x is stored." - Python documentation
 
 Task 2 - No. Except they are objects, which they can't be because objects names that starts with numbers are not valid in Python.
 
@@ -42,7 +42,7 @@ Task 18 -
 
 Task 19 - 
 
-Task 20 - 
+Task 20 - Because an empty tuple can be formed by an empty pair of parentheses
 
 Task 21 - 
 
