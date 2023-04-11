@@ -2,9 +2,9 @@
 
 ALX SE project to test understanding of objects in Python. Below are reasons for responses to some of the queries:
 
-Task 0 - 
+Task 0 - type() can be used to check the data type of an object.
 
-Task 1 - "For Cpython, id(x) is the memory address where x is stored." - Python documentation
+Task 1 - id() can be used to retrieve the memory address where a passed variable arg is stored.
 
 Task 2 - No. Except they are objects, which they can't be because objects names that starts with numbers are not valid in Python.
 
@@ -50,7 +50,7 @@ Task 22 - No, because a comma must follow an expression when creating a tuple 's
 
 Task 23 - Yes, becuase of the same reason that applies to task 22.
 
-Task 24 - 
+Task 24 - "True". Because the 'is' operator compares the identity of two objects and returns a Boolean depending on whether they're similar or not.
 
 Task 25 - 
 
