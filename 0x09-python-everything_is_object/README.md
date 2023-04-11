@@ -1,6 +1,6 @@
 0x09. Python - Everything is object
 
-ALX SE project to test understanding of objects in Python. Below are reasons for responses to some of the codes:
+ALX SE project to test understanding of objects in Python. Below are reasons for responses to some of the queries:
 
 Task 0 - 
 
