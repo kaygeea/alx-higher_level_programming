@@ -4,7 +4,7 @@ ALX SE project to test understanding of objects in Python. Below are reasons for
 
 Task 0 - 
 
-Task 1 - "For Cpython, id(x) is the memory address where x is stored." - Python documentation
+Task 1 - id() can be used to retrieve the memory address where a passed variable arg is stored.
 
 Task 2 - No. Except they are objects, which they can't be because objects names that starts with numbers are not valid in Python.
 
