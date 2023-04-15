@@ -2,7 +2,6 @@
 '''A module that creates a class and defines it accordingly'''
 
 
-
 class Square:
     '''A class that defines and initialises a sqaure'''
 
@@ -12,6 +11,7 @@ class Square:
             size: represenets the size of the square() object
         '''
         self.size = size
+
     @property
     def size(self):
         """Gets/sets the size of square() object."""
