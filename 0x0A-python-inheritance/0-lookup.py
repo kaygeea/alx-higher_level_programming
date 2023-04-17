@@ -4,6 +4,5 @@
 
 def lookup(obj):
     '''This func returns a list of obj's attributes and methods.'''
-    attsNmeths = [dir(obj)]
 
-    return attsNmeths
+    return dir(obj)
