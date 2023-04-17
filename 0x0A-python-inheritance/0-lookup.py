@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 '''This module creates a func that returns a list of obj's attrs and meths.'''
 
 
