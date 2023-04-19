@@ -6,4 +6,4 @@ def read_file(filename=""):
     '''This function reads from a text file and prints to stdout'''
 
     with open(filename, encoding="utf-8") as fl:
-        print(fl.read())
+        print(fl.read(), end='')
