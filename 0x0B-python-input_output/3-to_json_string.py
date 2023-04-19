@@ -12,6 +12,4 @@ def to_json_string(my_obj):
     Return:
         JSON representation of my_obj.
     '''
-
-    with open("my_obj", "r+", encoding="utf-8") as str_rep:
-            return json.dumps(my_obj)
+    return json.dumps(my_obj)
