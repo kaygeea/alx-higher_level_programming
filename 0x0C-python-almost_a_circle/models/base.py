@@ -16,7 +16,7 @@ class Base:
             id: incoming argument for class id
         '''
 
-        if self.id is not None:
+        if id is not None:
             self.id = id
         else:
             Base.__nb_objects += 1
