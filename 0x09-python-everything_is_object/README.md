@@ -18,7 +18,7 @@ Task 6 - True. The '=='operator is used to check whether two variables reference
 
 Task 7 - True. The 'is' operator is used to check whether two variables point to the same object in memory.
 
-Task 8 - 
+Task 8 - True. Same reasoning on task 6 applies.
 
 Task 9 - 
 
