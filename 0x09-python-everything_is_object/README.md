@@ -40,7 +40,7 @@
 
 **Task 18** - Assignment gives an item a reference to an object in memory.
 
-**Task 19** - 
+**Task 19** - `copy.copy()` performs a simple shallow copy of an object.
 
 **Task 20** - Yes, because an empty tuple can be formed by an empty pair of parentheses.
 
