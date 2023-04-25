@@ -56,6 +56,6 @@
 
 **Task 26** - True.
 
-**Task 27** - Yes. Because lists are mutable, changes can be made directly to the object at its original address.
+**Task 27** - No.
 
 **Task 28** - 
