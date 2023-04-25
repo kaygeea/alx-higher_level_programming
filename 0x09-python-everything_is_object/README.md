@@ -10,7 +10,7 @@ Task 2 - No. The two variables have been assigned references to 2 different int 
 
 Task 3 - Yes. The two variables have been assigned references to an int object of the same value.
 
-Task 4 - 
+Task 4 - No. Because variables in Python do not hold the values, but hold references to the values; thus 'a' is a ref to 89 while 'b' is a ref to a.
 
 Task 5 - 
 
