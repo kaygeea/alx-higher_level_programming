@@ -40,7 +40,7 @@
 
 **Task 18** - Assignment gives an item a reference to an object in memory.
 
-**Task 19** - `copy.copy()` performs a simple shallow copy of an object.
+**Task 19** - `.copy()` performs a simple shallow copy of an object.
 
 **Task 20** - Yes, because an empty tuple can be formed by an empty pair of parentheses.
 
@@ -52,7 +52,7 @@
 
 **Task 24** - True. Because the `is` operator compares the identity of two objects and returns a Boolean depending on whether they're similar or not.
 
-**Task 25** - True. Because of the same reason that applies to Task 24.
+**Task 25** - False. Because of the same reason that applies to Task 24.
 
 **Task 26** - 
 
