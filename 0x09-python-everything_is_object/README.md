@@ -6,7 +6,7 @@ Task 0 - type() can be used to check the data type of an object.
 
 Task 1 - id() can be used to retrieve the memory address where a passed variable arg is stored.
 
-Task 2 - No. Except they are objects, which they can't be because objects names that starts with numbers are not valid in Python.
+Task 2 - No. Although they are of the same object type(int), the 2 objects are not the same.
 
 Task 3 - Still no, because of the same reason in Task 2
 
