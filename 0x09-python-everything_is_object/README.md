@@ -6,9 +6,9 @@ Task 0 - type() can be used to check the data type of an object.
 
 Task 1 - id() can be used to retrieve the memory address where a passed variable arg is stored.
 
-Task 2 - No. Although they are of the same object type(int), the 2 objects are not the same.
+Task 2 - No. The two variables have been assigned references to 2 different int objects.
 
-Task 3 - Still no, because of the same reason in Task 2
+Task 3 - Yes. The two variables have been assigned references to an int object of the same value.
 
 Task 4 - 
 
