@@ -1,6 +1,6 @@
-<h2>**0x09. Python - Everything is object**</h2>
+<h1>0x09. Python - Everything is object</h1>
 
-<h5>ALX SE project to test understanding of objects in Python. Below are reasons for responses to some of the queries:</h5>
+<h4>ALX SE project to test understanding of objects in Python. Below are reasons for responses to some of the queries:</h4>
 
 **Task 0** - `type()` can be used to check the data type of an object.
 
@@ -30,7 +30,7 @@
 
 **Task 13** - True. Although the object (list) is mutable, var *b* points to the same value as var *b*.
 
-**Task 14** - 
+**Task 14** - An in-place modification of a mutable object that is referenced by multiple variables will impact the other co-referencing variables.
 
 **Task 15** - 
 
