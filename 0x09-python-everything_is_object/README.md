@@ -16,7 +16,7 @@ Task 5 - No. Flowing from reasoning in task 4; since ints are immutable, a new o
 
 Task 6 - True. The '=='operator is used to check whether two variables reference objects with the same value.
 
-Task 7 - 
+Task 7 - True. The 'is' operator is used to check whether two variables point to the same object in memory.
 
 Task 8 - 
 
