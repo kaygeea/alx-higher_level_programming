@@ -38,7 +38,7 @@
 
 **Task 17** - `.append()` adds an item to the end of a list.
 
-**Task 18** - 
+**Task 18** - Assignment gives an item a reference to an object in memory.
 
 **Task 19** - 
 
