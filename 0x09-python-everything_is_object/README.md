@@ -22,7 +22,7 @@ Task 8 - True. Same reasoning on task 6 applies.
 
 Task 9 - True. Same reasoning on task 7 applies.
 
-Task 10 - 
+Task 10 - True. Same reasoning on task 6 applies.
 
 Task 11 - 
 
