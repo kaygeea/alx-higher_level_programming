@@ -20,7 +20,7 @@ Task 7 - True. The 'is' operator is used to check whether two variables point to
 
 Task 8 - True. Same reasoning on task 6 applies.
 
-Task 9 - 
+Task 9 - True. Same reasoning on task 7 applies.
 
 Task 10 - 
 
