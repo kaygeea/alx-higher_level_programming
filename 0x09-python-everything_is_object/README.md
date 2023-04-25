@@ -12,7 +12,7 @@ Task 3 - Yes. The two variables have been assigned references to an int object o
 
 Task 4 - Yes. Since variables in Python do not hold the values, but hold references to the values; thus 'a' is a ref to 89 while 'b' is a ref to a and thus pointing to the same thing.
 
-Task 5 - 
+Task 5 - No. Flowing from reasoning in task 4; since ints are immutable, a new object is created to store the value, and it's reference is then assigned to 'b'.
 
 Task 6 - 
 
