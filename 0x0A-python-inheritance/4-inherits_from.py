@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''This module creates a function that performs a derived instance check'''
+'''This module creates a function that performs an inherited instance check'''
 
 
 def inherits_from(obj, a_class):
@@ -11,6 +11,6 @@ def inherits_from(obj, a_class):
         True or False, depending on obj()'s type.
     '''
 
-    if type(obj) != a_class and if issubclass(type(obj), a_class:
-        retturn True
+    if issubclass(type(obj), a_class) and type(obj) != a_class:
+        return True
     return False
