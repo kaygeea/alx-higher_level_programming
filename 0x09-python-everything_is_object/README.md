@@ -14,7 +14,7 @@ Task 4 - Yes. Since variables in Python do not hold the values, but hold referen
 
 Task 5 - No. Flowing from reasoning in task 4; since ints are immutable, a new object is created to store the value, and it's reference is then assigned to 'b'.
 
-Task 6 - True. The '=='operator is used to check whether two variables reference objects with the same value.
+Task 6 - True. The '=='operator is used to check whether two variables reference objects with equal value.
 
 Task 7 - True. The 'is' operator is used to check whether two variables point to the same object in memory.
 
@@ -26,7 +26,7 @@ Task 10 - True. Same reasoning on task 6 applies.
 
 Task 11 - False. Since lists are mutable and can be arbitrarily changed, Python resource optimization will not assing the variables to the same object.
 
-Task 12 - 
+Task 12 - True. Same reasoning on task 6 applies.
 
 Task 13 - 
 
