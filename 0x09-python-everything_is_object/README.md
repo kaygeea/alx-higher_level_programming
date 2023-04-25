@@ -24,7 +24,7 @@ Task 9 - True. Same reasoning on task 7 applies.
 
 Task 10 - True. Same reasoning on task 6 applies.
 
-Task 11 - 
+Task 11 - False. Since lists are mutable and can be arbitrarily changed, Python resource optimization will not assing the variables to the same object.
 
 Task 12 - 
 
