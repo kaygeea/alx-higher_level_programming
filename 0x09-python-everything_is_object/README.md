@@ -32,7 +32,7 @@
 
 **Task 14** - An in-place modification of a mutable object that is referenced by multiple variables will impact the other co-referencing variables.
 
-**Task 15** - 
+**Task 15** - Same reasoning on tast 14 applies.
 
 **Task 16** - The `+=` operand revalues an assigned element by adding the value of an input to it.
 
