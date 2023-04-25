@@ -54,7 +54,7 @@
 
 **Task 25** - False.
 
-**Task 26** - 
+**Task 26** - True.
 
 **Task 27** - Yes. Because lists are mutable, changes can be made directly to the object at its original address.
 
