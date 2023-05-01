@@ -18,13 +18,10 @@ The function handles simple string inputs:
     >>> say_my_name("Ciroma", "Chukwudi")
     My name is Ciroma Chukwudi
 
-    >>> say_my_name("Megas", "XLR")
-    My name is Megas XLR
-
     >>> say_my_name("Formation", "4-3-3")
     My name is Formation 4-3-3
 
-The function can receive and handle one argument, which will be treated as firts_name, as the second argument is set to an empty string by default
+The function can receive and handle one argument, which will be treated as first_name, as the second argument is set to an empty string by default.
 However, the output will be printed with a whitespace for the missing second argument:
 
     >>> say_my_name("Tristan")
@@ -35,7 +32,7 @@ a TypeError will be raised with a corresponding error message:
 
     >>> say_my_name(21, "JumpStreet")
     Traceback (most recent call last):
-        ...
+        ...i
     TypeError: first_name must be a string
 
     >>> say_my_name("John", 3.16)
@@ -47,3 +44,11 @@ a TypeError will be raised with a corresponding error message:
     Traceback (most recent call last):
         ...
     TypeError: first_name must be a string
+
+The function expects to receive at least one argument. If no argument is received,
+a ValueError will be raised with a corresponding error message:
+
+    >>> say_my_name()
+    Traceback (most recent call last):
+        ...
+    TypeError: say_my_name() missing 1 required positional argument: 'first_name'
