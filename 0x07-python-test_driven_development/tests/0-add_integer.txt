@@ -1,0 +1,61 @@
+The `add_integer` Module
+========================
+
+Guide to the usage of and specification for the `add_integer` function
+----------------------------------------------------------------------
+
+This is a function created and defined in the `0-add_integer.py` module. It is expected to receive 2 arguments: `a` and `b`, with `b` set to a default value of 98, sum them up and return their sum value. To call the function: add_integer(a, b=98).
+
+The Implementation
+==================
+
+Import the module:
+
+	>>> add_integer = __import__('0-add_integer').add_integer
+
+The function handles simple int inputs:
+
+    >>> add_integer(6, 9)
+    15
+
+    >>> add_integer(2)
+    100
+
+The function handles float type input as well, by first converting the input to integers:
+
+    >>> add_integer(6.3, 4.4)
+    10
+
+    >>> add_integer(14.4, 7)
+    21
+
+    >>> add_integer(2.3, -3)
+    -1
+
+The function handles only one received argument, as the second arg has a default value of 98:
+
+    >>> add_integer(2)
+    100
+
+    >>> add_integer(7.3)
+    105
+
+    >>> add_integer(-8)
+    90
+
+The function expects that both arguments are either integers or floats. If either argument is a non-integer and non-float, a TypeError is raised with a corresponding exception message:
+
+    >>> add_integer("Hello", 3)
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
+
+    >>> add_integer(5, "World")
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an integer
+
+    >>> add_integer("Hello")
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
