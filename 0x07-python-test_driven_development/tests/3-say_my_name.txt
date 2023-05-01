@@ -32,7 +32,7 @@ a TypeError will be raised with a corresponding error message:
 
     >>> say_my_name(21, "JumpStreet")
     Traceback (most recent call last):
-        ...i
+        ...
     TypeError: first_name must be a string
 
     >>> say_my_name("John", 3.16)
