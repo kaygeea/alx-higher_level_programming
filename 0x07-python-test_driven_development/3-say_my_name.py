@@ -4,11 +4,9 @@
 
 def say_my_name(first_name, last_name=""):
     '''This func prints the string "My name is <first name> <last name>"
-        
         Args:
             first_name: incoming argument for first name of name to be printed
             last_name: incoming argument for last name of name to be printed
-        
         Exception:
             TypeError: if either first_name or last_name are not strings
     '''
