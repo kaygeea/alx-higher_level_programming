@@ -1,5 +1,5 @@
 The `0.add_integer.py` Module
-========================
+=============================
 
 Guide to the usage of and specification for the `add_integer` function
 ----------------------------------------------------------------------
