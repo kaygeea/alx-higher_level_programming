@@ -1,0 +1,63 @@
+THE `4-print_square.py` MODULE
+==============================
+
+Guide to the usage of and specification for the `print_square` function
+-----------------------------------------------------------------------
+
+The `print_square` function is created and defined in the `4-print_sqaure.py` module. It receives one argument: size.
+It prints a square according to the size received and represents the square visually with the `#` character.
+
+The Implementation
+==================
+
+Import the module:
+    >>> print_square = __import__('4-print_square').print_square
+
+The function accepts only arguments of type integer. If any other type is passed as an argument,
+A TypeError exception will be raised, with a corresonding error message:
+
+    >>> print_square(5)
+    #####
+    #####
+    #####
+    #####
+    #####
+
+    >>> print_square(2.4)
+    Traceback (most recent call last):
+        ...
+    TypeError: size must be an integer
+
+    >>> print_square("square")
+    Traceback (most recent call last):
+        ...
+    TypeError: size must be an integer
+
+The function will accept 0 as argument for size, and would print an empty string as output:
+
+    >>> print_square(0)
+    <BLANKLINE>
+
+The function handles an argument of type integer that is less than 0 by raising a ValueError exception,
+along with a corresponding error message:
+
+    >>> print_square(-6)
+    Traceback (most recent call last):
+        ...
+    ValueError: size must be >= 0
+
+Similarly if an argument of type float that is less that 0 is passed, the function will raise a TypeError exception,
+along with a corresponding error message:
+
+    >>> print_square(-3.5)
+    Traceback (most recent call last):
+        ...
+    TypeError: size must be an integer
+
+The function expects to receive one argument. If no argument is received,
+a TypeError will be raised with a corresponding error message:
+
+    >>> print_square()
+    Traceback (most recent call last):
+        ...
+    TypeError: print_square() missing 1 required positional argument: 'size'
