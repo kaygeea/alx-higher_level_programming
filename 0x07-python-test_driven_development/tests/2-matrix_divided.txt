@@ -5,7 +5,7 @@ Guide to the usage of and specification for the `matrix_divided` function
 ---------------------------------------------------------------------------
 
 The `matrix_divided` function is created and defined in the `2-matrix_divided` module. It takes two arguments: `matrix` & `div`;
-It divides all the elements in `matrix` by the value passed as `div`, rounds the quotient to 2 decimal places;
+It divides all the elements in `matrix` by the value passed as `div`, rounds the quotient to a maximum of 2 decimal places;
 and returns a new matrix of the quotients.
 
 The Implementation
