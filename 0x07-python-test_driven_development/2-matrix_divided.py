@@ -13,6 +13,7 @@ def matrix_divided(matrix, div):
             b. if the rows in matrix are not of the same size.
             c. if div is not a number of type int or float.
         ZeroDivisionError: if div == 0
+    Return: A new matrix from the quotient of matrix elems and div
     '''
 
     if (not isinstance(matrix, list) or matrix == [] or
