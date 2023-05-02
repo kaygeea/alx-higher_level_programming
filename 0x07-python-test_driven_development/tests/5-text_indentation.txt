@@ -1,0 +1,51 @@
+THE `5-text_indentation.py` MODULE
+==================================
+
+Guide to the usage of and specification for the `text_indentation` function
+---------------------------------------------------------------------------
+
+The `text_indentation` function is created and defined in the `5-text_indentation` module. It receives one argument: `text`; and
+prints a text with 2 new lines inserted after any of these characters: `.`, `?` and `:` found in text.
+
+The Implementation:
+===================
+
+Import the module:
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+The function takes only one argument value of type string, and would raise a TypeError exception if any other type is passed:
+
+    >>> text_indentation("Hello world. Have you tested your code? and then this is a colon: for the test.")
+    Hello world.
+    <BLANKLINE>
+    Have you tested your code?
+    <BLANKLINE>
+    and then this is a colon:
+    <BLANKLINE>
+    for the test.
+    <BLANKLINE>
+
+    >>> text_indentation("Hello, no delimiters here")
+    Hello, no delimiters here
+
+    >>> text_indentation(123456789)
+    Traceback (most recent call last):
+        ...
+    TypeError: text must be a string
+
+    >>> text_indentation(None)
+    Traceback (most recent call last):
+        ...
+    TypeError: text must be a string
+
+The function takes one string argument and will raise a TypeError excpetion if zero or more than one arguments are passed:
+
+    >>> text_indentation()
+    Traceback (most recent call last):
+        ...
+    TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+    >>> text_indentation("Two strings?", "Maximum number of args allowed: 1.", "This is dedicated to those that do not hear word.")
+    Traceback (most recent call last):
+        ...
+    TypeError: text_indentation() takes 1 positional argument but 3 were given
