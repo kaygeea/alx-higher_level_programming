@@ -33,10 +33,10 @@ A TypeError exception will be raised, with a corresonding error message:
         ...
     TypeError: size must be an integer
 
-The function will accept 0 as argument for size, and would print an empty string as output:
+The function will accept 0 as argument for size, and would print a blank line as output:
 
     >>> print_square(0)
-    <BLANKLINE>
+    <BLANKLINE> 
 
 The function handles an argument of type integer that is less than 0 by raising a ValueError exception,
 along with a corresponding error message:
