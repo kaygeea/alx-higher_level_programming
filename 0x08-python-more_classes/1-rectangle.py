@@ -12,8 +12,8 @@ class Rectangle:
             height: incoming (optional) arg for height of a rectangle() object
         '''
 
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
