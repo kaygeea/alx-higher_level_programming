@@ -57,7 +57,7 @@ class Rectangle:
             representing the rectangle() object with the '#' character
         '''
         if self.__width == 0 or self.__height == 0:
-            print("")
+            return ("")
 
         vizRect = []
         for i in range(self.__height):
