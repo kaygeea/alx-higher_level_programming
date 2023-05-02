@@ -67,6 +67,11 @@ The rows of `matrix` must have the same size, else a TypeError exception will be
         ...
     ZeroDivisionError: division by zero
 
+The function handles `div` argument of float('inf'):
+
+    >>> matrix_divided([[3, 5, 7], [9, 11, 14]], float('inf'))
+    [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+
 The function takes two arguments (of specific types) and will raise a TypeError excpetion if zero, one or more than two arguments are passed:
 
     >>> matrix_divided()
