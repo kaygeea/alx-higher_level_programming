@@ -1,0 +1,140 @@
+THE `1-my_list.py` MODULE
+=========================
+
+This module creates and defines a class `MyList`.
+
+
+Guide to the usage of and specification for the `MyList` class
+--------------------------------------------------------------
+
+The `MyList` class inherits from `list`. It takes a list, sorts it in ascending order and then prints the list, via its `print_sorted` method.
+
+The Implementation:
+===================
+
+Import the class:
+
+    >>> MyList = __import__('1-my_list').MyList
+
+The `MyList` class can be instantiated without arguments and will return an empty list:
+
+    >>> new_list = MyList()
+    >>> type(new_list)
+    <class '1-my_list.MyList'>
+
+~~~Printing list~~~
+
+    >>> print(new_list)
+    []
+
+The class takes a single argument, which must be an iterable. A TypeError exception will be raised if a non-iterable type argument is passed.
+Similarly, if more than one argument is passed, a TypeError exception will be raised:
+
+    >>> new_list = MyList([11, 12, 13])
+    >>> print(new_list)
+    [11, 12, 13]
+
+    >>> new_list = MyList(None)
+    Traceback (most recent call last):
+        ...
+    TypeError: 'NoneType' object is not iterable
+
+    >>> new_list = MyList([11, 12, 13], [14, 15, 16])
+    Traceback (most recent call last):
+        ...
+    TypeError: list expected at most 1 argument, got 2
+
+Since `MyList` as a class, inherits from the `list` class, it adopts all the methods and functions of the `list` class, some of which include:
+
+The .append() method:
+
+    >>> new_list = MyList()
+    >>> new_list.append(11)
+    >>> new_list.append(22)
+    >>> new_list.append(33)
+    >>> print(new_list)
+    [11, 22, 33]
+
+The .remove() method:
+
+    >>> new_list.remove(22)
+    >>> print(new_list)
+    [11, 33]
+
+The .reverse() method:
+
+    >>> new_list.reverse()
+    >>> print(new_list)
+    [33, 11]
+
+For the full complements of functions & methods available, check the documentation @ https://docs.python.org/3/tutorial/datastructures.html
+
+The `MyList` class defines a function `print_sorted`:
+
+    >>> new_list = MyList()
+    >>> print(new_list.print_sorted)
+    <bound method MyList.print_sorted of []>
+
+The method does not take any argument. If an argument is passed into it, a TypeError exception will be raised:
+
+    >>> new_list.print_sorted(1)
+    Traceback (most recent call last):
+        ...
+    TypeError: print_sorted() takes 1 positional argument but 2 were given
+
+The method sorts a list in ascending order and prints out the list, while maintaining the order of the original list:
+
+    >>> new_list.append(3)
+    >>> new_list.append(9)
+    >>> new_list.append(4)
+    >>> new_list.append(15)
+    >>> new_list.append(1)
+    >>> print(new_list)
+    [3, 9, 4, 15, 1]
+
+~~~Printing new sorted list~~~
+
+    >>> new_list.print_sorted()
+    [1, 3, 4, 9, 15]
+
+~~~Printing original list~~~
+
+    >>> print(new_list)
+    [3, 9, 4, 15, 1]
+
+The method also works on a list of strings by sorting them lexographically:
+
+    >>> new_list = MyList()
+    >>> new_list.append("Queue")
+    >>> new_list.append("Function")
+    >>> new_list.append("Value")
+    >>> new_list.append("OOP")
+    >>> new_list.append("Append")
+    >>> print(new_list)
+    ['Queue', 'Function', 'Value', 'OOP', 'Append']
+
+~~~printing new sorted list~~~
+
+    >>> new_list.print_sorted()
+    ['Append', 'Function', 'OOP', 'Queue', 'Value']
+
+~~printing original list~~~
+
+    >>> print(new_list)
+    ['Queue', 'Function', 'Value', 'OOP', 'Append']
+
+The method would print an empty list if no arguments are passed:
+
+    >>> new_list = MyList()
+    >>> new_list.print_sorted()
+    []
+
+The method only takes an argument of list with elements of homogenous type.
+A TypeError exception will be raised, if a list with elements of different types are passed:
+
+    >>> new_list = MyList([1, "Queue", 15, "Append", 1])
+    >>> new_list.print_sorted()
+    Traceback (most recent call last):
+        ...
+    TypeError: '<' not supported between instances of 'str' and 'int'
+
