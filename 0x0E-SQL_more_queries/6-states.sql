@@ -1,5 +1,5 @@
 -- Create the database - "hbtn_0d_usa", and the table - "states" in the hbtn_0d_usa DB.
--- DESCRIPTION:
+-- DESCRIPTION (of states table):
 --	a. column 1 = "id" of type INT, a PK with unique and not null constraints, as well as auto generated.
 --	b. column 2 = "name" of type VARCHAR with a max of 256 chars and a not null constrain.
 --
