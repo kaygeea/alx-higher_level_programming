@@ -5,6 +5,6 @@
 --	c. Only 1 select statement if allowed in the query.
     SELECT cities.id, cities.name, states.name
       FROM cities
-INNER JOIN states
-        ON cities.id = states.id
+           INNER JOIN states
+                   ON cities.id = states.id
   ORDER BY cities.id;
