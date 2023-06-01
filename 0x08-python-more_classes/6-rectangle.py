@@ -17,6 +17,22 @@ class Rectangle:
         self.__height = height
         Rectangle.number_of_instances += 1
 
+        """To keep track of num of instances with class methods:
+        Rectangle.increment_count +=1 (call func under the __init__ method)
+
+        #define class methods
+
+        @classmethod
+        def increment_count(cls):
+            cls.number_of_instances += 1
+
+        @classmethod
+        def decrement_count(cls):
+            cls.number_of_instances -= 1
+
+        Rectangle.decrement_count (call function under the __del__ method)
+        """
+
     @property
     def width(self):
         """Get & set the width attribute of rectangle()"""
