@@ -56,7 +56,7 @@ class Rectangle:
         """Print the rectangle with the '#' character"""
         if self.width == 0 or self.height == 0:
             return ("")
-        
+
         rect = ""
         for column in range(self.height):
             for row in range(self.width):
