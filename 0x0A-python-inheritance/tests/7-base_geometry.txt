@@ -1,0 +1,92 @@
++---------------------------------+
+| THE `7-base_geometry.py` MODULE |
++---------------------------------+
+
+USAGE GUIDE AND USER SPECIFICATION FOR `BaseGeometry()` CLASS
+-------------------------------------------------------------
+
+The `BaseGeometry()` class referenced in the test is created and defined in the 7-base_geometry.py module. It takes no argument but,
+has two(2) methods: `.area()`(non-implemented) & `.integer_validator()`.
+
+The Implementation:
+===================
+
+Import the class:
+
+    >>> TestBG = __import__('7-base_geometry').BaseGeometry
+
+The `BaseGeometry` class can be instantiated without arguments and will create and empty object:
+
+    >>> new_BG = TestBG()
+    >>> type(new_BG)
+    <class '7-base_geometry.BaseGeometry'>
+
+The non-implemented `.area()` class method raises an exception:
+
+    >>> new_BG.area()
+    Traceback (most recent call last):
+        ...
+    Exception: area() is not implemented
+
+The `.integer_validator()` method takes 2 arguments - `name` & `value`. and validates the type of `value` arg:
+
+    >>> new_BG.integer_validator("FIFA", 23)
+
+The class method must receive 2 arguments, else a TypeError exception with a corresponding error message:
+
+    >>> new_BG.integer_validator()
+    Traceback (most recent call last):
+        ...
+    TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+ 
+    >>> new_BG.integer_validator("FIFA")
+    Traceback (most recent call last):
+        ...
+    TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+The purpose of this class method is to validate that the value passed as `value` is an integer and would raise a exceptions if otherwise:
+
+`value` must greater than 0, else a ValueError exception will be raised with a corresponding error message:
+
+    >>> new_BG.integer_validator("FIFA", -99)
+    Traceback (most recent call last):
+        ...
+    ValueError: -99 must be greater than 0
+
+    >>> new_BG.integer_validator("FIFA", 0)
+    Traceback (most recent call last):
+        ...
+    ValueError: 0 must be greater than 0
+
+`value` can only be of type integer, else a TypeError will be raised with a corresponding error message:
+
+    >>> new_BG.integer_validator("FIFA", "twenty-three")
+    Traceback (most recent call last):
+        ...
+    TypeError: twenty-three must be an integer
+
+    >>> new_BG.integer_validator("FIFA", (23,))
+    Traceback (most recent call last):
+        ...
+    TypeError: (23,) must be an integer
+
+    >>> new_BG.integer_validator("FIFA", [23])
+    Traceback (most recent call last):
+        ...
+    TypeError: [23] must be an integer
+
+    >>> new_BG.integer_validator("FIFA", {2, 3})
+    Traceback (most recent call last):
+        ...
+    TypeError: {2, 3} must be an integer
+
+    >>> new_BG.integer_validator("FIFA", True)
+    
+Traceback (most recent call last):
+...
+TypeError: True must be an integer
+
+    >>> new_BG.integer_validator("FIFA", None)
+    Traceback (most recent call last):
+        ...
+    TypeError: None must be an integer
