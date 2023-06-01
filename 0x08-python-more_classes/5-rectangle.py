@@ -71,5 +71,6 @@ class Rectangle:
         return rep
 
     def __del__(self):
-        """Finalize the class during garbage collection"""
+        """Finalize the class and print message
+        during garbage collection (deletion) of class objects"""
         print("Bye rectangle...")
