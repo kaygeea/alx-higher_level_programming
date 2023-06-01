@@ -63,7 +63,7 @@ class Rectangle:
         rect = ""
         for column in range(self.height):
             for row in range(self.width):
-                rect += str(Rectangle.print_symbol)
+                rect += str(self.print_symbol)
             if column < self.height - 1:
                 rect += "\n"
         return rect
