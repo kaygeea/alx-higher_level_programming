@@ -92,14 +92,17 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
-        """Return new Rectangle() with w & h attributes assigned val of size
+        """Return new Rectangle() instance with width == height == size
         Arg:
-            a. size: incoming arg for value to be assigned as new Rectangle
+            a. size: incoming arg for values of new Rectangle
         """
         new_rect = Rectangle()
         new_rect.width = size
         new_rect.height = size
         return new_rect
+        """Alternatively, access the class directly and set vals by:
+        return cls(size, size)
+        """
 
     def __repr__(self):
         """Return an str rep of rectangle() that can be passed into eval()"""
