@@ -11,7 +11,7 @@
  * -> Use of "var" is not allowed.
  */
 
-if (process.argv.length === 2) {
+if (process.argv[2] === undefined) {
   console.log('No arguemnt');
 } else if (process.argv.length === 3) {
   console.log('Argument found');
