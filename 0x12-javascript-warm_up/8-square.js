@@ -1,9 +1,9 @@
 #!/usr/bin/node
-/* Print a square with the 'x' character.
+/* Print a square with the 'X' character.
  * SPECS:
  * -> The first argument is the size of the square.
  * -> If the first argument can’t be converted to an integer, print “Missing size”.
- * -> The square should be printed out with the 'x' character.
+ * -> The square should be printed out with the 'X' character.
  *
  * CONSTRAINTS:
  * -> "console.log()" must be used to print all outputs.
@@ -18,7 +18,7 @@ if (isNaN(num)) {
   for (let yAxis = 0; yAxis < num; yAxis++) {
     let row = '';
     for (let xAxis = 0; xAxis < num; xAxis++) {
-      row += 'x';
+      row += 'X';
     }
     console.log(row);
   }
