@@ -10,5 +10,5 @@ const myObject = {
   value: 12
 };
 console.log(myObject);
-myObject.value = 89; // Properties of objects assigned to constants are not protected. This they can be changed.
+myObject.value = 89; // Properties of objects assigned to constants are not protected; thus they can be changed.
 console.log(myObject);
