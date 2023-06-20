@@ -26,7 +26,6 @@ if __name__ == "__main__":
             list_states_query = """
             SELECT id, name FROM states
             WHERE name = '{}'
-            AND id BETWEEN 1 AND 5
             """.format(sys.argv[4])
 
             with connection.cursor() as cursor:
