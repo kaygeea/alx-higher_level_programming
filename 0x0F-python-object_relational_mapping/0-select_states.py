@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""List all states from the database 'hbtn_0e_0_usa'
+"""
+List all states from the database 'hbtn_0e_0_usa'
 SPECS:
     a. The script takes 3 args: mysql username, mysql password & database name
     b. Connect to a MySQL server running on localhost at port 3306
