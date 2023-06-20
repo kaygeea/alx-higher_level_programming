@@ -2,6 +2,7 @@
 """
 List all states starting with 'N' from the 'hbtn_0e_0_usa' database.
 """
+
 from mysql.connector import connect, Error
 import sys
 import MySQLdb
