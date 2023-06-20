@@ -25,7 +25,7 @@ if __name__ == "__main__":
                 ) as connection:
             list_states_query = """
             SELECT id, name FROM states
-            WHERE name = '{}'
+            WHERE name = BINARY '{}'
             """.format(sys.argv[4])
 
             with connection.cursor() as cursor:
