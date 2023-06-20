@@ -17,7 +17,7 @@ if __name__ == "__main__":
                 ) as connection:
             list_states_with_N_query = """
             SELECT id, name FROM states
-            WHERE name LIKE 'N%';
+            WHERE name LIKE BINARY 'N%';
             """
 
             with connection.cursor() as cursor:
