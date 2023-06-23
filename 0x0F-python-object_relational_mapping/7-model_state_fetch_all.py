@@ -9,8 +9,8 @@ from model_state import Base, State
 from sys import argv
 
 
-url = URL.create('mysql+mysqldb', username=argv[1], password=argv[2], host='localhost',\
-        port=3306, database=argv[3])
+url = URL.create('mysql+mysqldb', username=argv[1], password=argv[2],
+                 host='localhost', port=3306, database=argv[3])
 v6_engine = create_engine(url)
 
 with Session(v6_engine) as session:
