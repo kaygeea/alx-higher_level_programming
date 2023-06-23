@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This module adds a new State obj: 'Louisiana', to the hbtn_0e_6_usa DB"""
+"""This module adds a new State obj, 'Louisiana', to the hbtn_0e_6_usa DB"""
 from sqlalchemy import create_engine
 from sqlalchemy.engine.url import URL
 from sqlalchemy.orm import sessionmaker
