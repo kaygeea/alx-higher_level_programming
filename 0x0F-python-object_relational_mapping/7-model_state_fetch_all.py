@@ -2,16 +2,15 @@
 """
 Lists all State objs from the database "hbtn_0e_6_usa" using SQLAlchemy.
 """
-from sqlalchemy import create_engine, select
+from sqlalchemy import create_engine
 from sqlalchemy.engine.url import URL
 from sqlalchemy.orm import Session
 from model_state import Base, State
-import sys
-import MySQLdb
+from sys import argv
 
 
-url = URL('MySQLdb, username={}, password={}, host=localhost, port=3306,\
-        database={}'.format(sys.argv[1], sys.argv[2], sys.argv[3]))
+url = URL.create('mysql+mysqldb', username=argv[1], password=argv[2], host='localhost',\
+        port=3306, database=argv[3])
 v6_engine = create_engine(url)
 
 with Session(v6_engine) as session:
