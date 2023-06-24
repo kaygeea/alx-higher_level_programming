@@ -7,18 +7,17 @@ from model_state import Base, State
 from sys import argv
 
 
-url = URL.create('mysql+mysqldb', username=argv[1], password=argv[2],
-                 host='localhost', port=3306, database=argv[3])
-v10_engine = create_engine(url)
-Session = sessionmaker(v10_engine)
+if __name__ == "__main__":
+    url = URL.create('mysql+mysqldb', username=argv[1], password=argv[2],
+                     host='localhost', port=3306, database=argv[3])
+    v10_engine = create_engine(url)
+    Session = sessionmaker(v10_engine)
 
-with Session.begin() as session:  # .begin() runs cntxt manager & auto-commits
-    new_state = State(name="Louisiana")
-    session.add(new_state)
+    with Session.begin() as session:
+        # .begin() runs a context manager which auto-commits & closes session.
+        new_state = State(name="Louisiana")
+        session.add(new_state)
 
-    new_state_obj = session.query(State).filter(State.name == 'Louisiana').\
-            first()
-    print('{}'.format(new_state_obj.id))
-
-    # for updated_states in session.query(State).order_by(State.id):
-        # print("{}: {}".format(updated_states.id, updated_states.name))
+        new_state_obj = session.query(State).filter(State.name == 'Louisiana')\
+            .first()
+        print('{}'.format(new_state_obj.id))
