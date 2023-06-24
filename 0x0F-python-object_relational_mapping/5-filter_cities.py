@@ -26,7 +26,7 @@ if __name__ == "__main__":
 
             with connection.cursor() as cursor:
                 cursor.execute(list_cities_by_state_query, (sys.argv[4],))
-                for city in cursor.fetchall():
-                    print(city)
+                city = cursor.fetchall()
+                print(', '.join([name[0] for name in city]))
     except Error as err_msg:
         print(err_msg)
