@@ -18,5 +18,5 @@ if __name__ == "__main__":
 
     with Session.begin() as session:
         for states_to_del in session.query(State).filter(State.name.
-                    like('%a%')):
+                                                         like('%a%')):
             session.delete(states_to_del)
