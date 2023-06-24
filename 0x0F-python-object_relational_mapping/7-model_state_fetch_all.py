@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This module lists all State objs from the database "hbtn_0e_6_usa",
+This module lists all State objs from the database 'hbtn_0e_6_usa',
 using SQLAlchemy.
 """
 from sqlalchemy import create_engine
