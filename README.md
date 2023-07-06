@@ -10,4 +10,5 @@
 <li>Networking with <code>urllib</code> and <code>Requests</code> packages</li>
 </ol>
 
-<h2>The repository also hosts introductory projects in JavaScript programming language; covering aspects like Objects, Scopes and Closures.</h2>
+<h2>The repository also hosts introductory projects in JavaScript programming language; covering aspects like Objects, Scopes and Closures.
+Additionally, the repository also hosts projects on Strcutured Query Language (SQL).</h2>
