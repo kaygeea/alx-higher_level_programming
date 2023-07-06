@@ -1,4 +1,4 @@
-<h2>This repository hosts projects in higher level Python programming language. Some of these projects cover aspects like:</h2>
+<h2>This repository hosts projects in higher level Python programming language. Some of the projects cover aspects like:</h2>
 <ol>
 <li>Data Structures</li>
 <li>Exceptions</li>
