@@ -10,7 +10,7 @@ from sys import argv
 
 
 if __name__ == "__main__":
-    data_to_post = {'email' : argv[2]}
+    data_to_post = {'email': argv[2]}
     encoded_data = urlencode(data_to_post).encode('utf-8')
     post_req = Request(argv[1], data=encoded_data)
 
