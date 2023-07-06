@@ -16,4 +16,4 @@ if __name__ == "__main__":
 
     with urlopen(post_req) as response:
         decoded_data = response.read().decode('utf-8')
-        print(decoded_data[:-2])  # Sliced off 2 xtra chars printed with output
+        print(decoded_data)
