@@ -11,4 +11,4 @@
 </ol>
 
 <h2>The repository also hosts introductory projects in JavaScript programming language; covering aspects like Objects, Scopes and Closures.
-Additionally, the repository also hosts projects on Strcutured Query Language (SQL).</h2>
+Additionally, the repository also hosts projects in Structured Query Language (SQL).</h2>
