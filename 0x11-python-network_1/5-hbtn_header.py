@@ -6,4 +6,4 @@ from sys import argv
 
 if __name__ == "__main__":
     resp_obj = requests.get(argv[1])
-    print(resp_obj.headers['x-request-id'])  # case-insensitivity
+    print(resp_obj.headers.get('x-request-id'))  # case is insensitive
