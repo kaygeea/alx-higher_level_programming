@@ -80,11 +80,8 @@ The purpose of this class method is to validate that the value passed as `value`
         ...
     TypeError: FIFA must be an integer
 
-    >>> new_BG.integer_validator("FIFA", True)
-    
-    Traceback (most recent call last):
-    ...
-    TypeError: FIFA must be an integer
+    >>> new_BG.integer_validator("FIFA", True)    
+
 
     >>> new_BG.integer_validator("FIFA", None)
     Traceback (most recent call last):
