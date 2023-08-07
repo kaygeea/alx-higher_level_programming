@@ -28,11 +28,11 @@ The non-implemented `.area()` class method raises an exception:
         ...
     Exception: area() is not implemented
 
-The `.integer_validator()` method takes 2 arguments - `name` & `value`. and validates the type of `value` arg:
+The `.integer_validator()` method takes 2 arguments - `name` & `value` then validates the type of `value` arg:
 
     >>> new_BG.integer_validator("FIFA", 23)
 
-The class method must receive 2 arguments, else a TypeError exception with a corresponding error message:
+The class method must receive 2 arguments, else a TypeError exception with a corresponding error message will be raised:
 
     >>> new_BG.integer_validator()
     Traceback (most recent call last):
@@ -51,42 +51,42 @@ The purpose of this class method is to validate that the value passed as `value`
     >>> new_BG.integer_validator("FIFA", -99)
     Traceback (most recent call last):
         ...
-    ValueError: -99 must be greater than 0
+    ValueError: FIFA must be greater than 0
 
     >>> new_BG.integer_validator("FIFA", 0)
     Traceback (most recent call last):
         ...
-    ValueError: 0 must be greater than 0
+    ValueError: FIFA must be greater than 0
 
 `value` can only be of type integer, else a TypeError will be raised with a corresponding error message:
 
     >>> new_BG.integer_validator("FIFA", "twenty-three")
     Traceback (most recent call last):
         ...
-    TypeError: twenty-three must be an integer
+    TypeError: FIFA must be an integer
 
     >>> new_BG.integer_validator("FIFA", (23,))
     Traceback (most recent call last):
         ...
-    TypeError: (23,) must be an integer
+    TypeError: FIFA must be an integer
 
     >>> new_BG.integer_validator("FIFA", [23])
     Traceback (most recent call last):
         ...
-    TypeError: [23] must be an integer
+    TypeError: FIFA must be an integer
 
     >>> new_BG.integer_validator("FIFA", {2, 3})
     Traceback (most recent call last):
         ...
-    TypeError: {2, 3} must be an integer
+    TypeError: FIFA must be an integer
 
     >>> new_BG.integer_validator("FIFA", True)
     
-Traceback (most recent call last):
-...
-TypeError: True must be an integer
+    Traceback (most recent call last):
+    ...
+    TypeError: FIFA must be an integer
 
     >>> new_BG.integer_validator("FIFA", None)
     Traceback (most recent call last):
         ...
-    TypeError: None must be an integer
+    TypeError: FIFA must be an integer
