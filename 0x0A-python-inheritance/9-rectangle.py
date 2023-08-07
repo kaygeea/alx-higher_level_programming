@@ -4,10 +4,10 @@ BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
-    '''This class derives from BaseGeometry base class to build a rectangle'''
+    '''Derive from BaseGeometry base class to build a rectangle'''
 
     def __init__(self, width, height):
-        '''Initialises the attributes of rectangle()
+        '''Initialise the attributes of rectangle()
         Args:
             width: incoming argument for width of rectangle
             height: incoming argument for height of rectangle
@@ -19,13 +19,10 @@ class Rectangle(BaseGeometry):
         self.__height = height
 
     def area(self):
-        '''This method defines the area of rectangle()'''
-
+        '''Return the area of rectangle()'''
         return (self.__width * self.__height)
 
-    def print(self):
-        '''This method prints description of rectangle()'''
-
-        string = "[" + str(self.__class__.__name__) + "] "
-        string += str(self.__width) + "/" + str(self.__height)
-        return string
+    def __str__(self):
+        '''Print description of rectangle()'''
+        rep = str(f"[{Rectangle.__name__}] {self.__width}/{self.__height}")
+        return rep
